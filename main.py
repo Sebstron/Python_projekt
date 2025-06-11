@@ -38,7 +38,7 @@ def run_game(game):
 
     :param game: Instancja klasy GameOfLife zarządzająca logiką gry.
     """
-    global screen, clock  # bardzo ważne
+    global screen, clock
 
     paused = False
 
@@ -47,7 +47,7 @@ def run_game(game):
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pass  # ignorujemy zamknięcie okna przez X
+                pass
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     game.running = not game.running
